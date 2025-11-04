@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammar's Portfolio</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shippori+Mincho&display=swap" rel="stylesheet">
+
+        <style>
+          body{
+            background-color: #F0EEE9;
+            font-family: "Shippori Mincho", serif;
+
+          }
+          .nav-text-color a{
+            color: white;
+          }
+          .nav-container{
+            background-color: #787C85;
+          }
+          .nav-text-color a:hover{
+            color: white;
+            font-size: 20px;
+            transition: all ease-in-out 0.4s;
+          }
+          .profile-img img{
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            margin: 20px;
+            /* margin-top: -55px;
+            margin-left: -30px; */
+          }
+          .profile{
+            background-image: url(light\ wallpaper.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            align-items: center;
+            padding-bottom: 20px;
+          }
+          .profile p{
+            font-weight: bold;
+            color: #787785;
+            margin-bottom: -5px;
+          } 
+          /* .profile-text span{
+            font-family: "Bruno Ace SC", serif;
+            font-size: 25px;
+            background:linear-gradient(to right,#F3DDD4,#E1A292,#EE6C4D);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color: transparent;
+          } */
+          @media (max-width: 599px) {
+            .profile img{
+              margin: 20px 0px;
+            }
+            
+          }
+           .fullname span{
+            font-family: "Bruno Ace SC", serif;
+            font-size: 30px;
+            background:linear-gradient(to bottom,#e71717,#b47589);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color: transparent;
+           }
+           .occupation1 span{
+            font-family: "Bruno Ace SC", serif;
+            font-size: 30px;
+            background:linear-gradient(to right,#E63946,#06373A);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color: transparent;
+           }
+           .occupation2 span{
+            font-family: "Bruno Ace SC", serif;
+            font-size: 30px;
+            background:linear-gradient(to right,#E63946,#06373A);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color: transparent;
+           }
+          .profile-text{
+            text-align: center;
+            padding-top: 100px;
+          }
+          .profile-text p{
+            font-size: 15px;
+          }
+          .about-me{
+            background-color: #F0EEE9;
+          }
+          .about-me h4{
+            color:#E63946 ;
+            border-bottom: 2px solid #787788 ;
+          }
+          .about-me span{
+            font-size: 25px;
+            font-weight: 500;
+          }
+          .about-me p{
+            font-family: "Shippori Mincho", serif;
+          }
+          .skill-edu-head {
+            color:#E63946 ;
+            text-decoration: underline #787788;
+            /* border-bottom: 1px solid #787788 ; */
+          }
+          .skill-card{
+            width: 200px ;
+            height: 200px;
+            background-color: white;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          }
+          .edu-my{
+           background-color: #d0d5c8; 
+           box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          }
+          .some-skills{
+            font-size: 25px;
+            text-align: center;
+            color: #80221E;
+            font-weight: bolder;
+            text-decoration: underline;
+          }
+          .contact-container h4{
+            color:#E63946 ;
+            font-size: 30px;
+            text-decoration: underline #787788;
+          }
+        </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand shadow-lg nav-container">
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="row">
+            <div class="navbar-nav nav-text-color">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+              <a class="nav-link" aria-current="page" href="#about-id">About</a>
+              <a class="nav-link" aria-current="page" href="#edu-id">Education</a>
+              <a class="nav-link" aria-current="page" href="#contact-id">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid profile">
+        <div class="row">
+        <div class="col-lg-6 col-12 profile-img" id="home">
+          <img src="ammar-pic.png" alt="">
+        </div>
+        <div class="col-lg-6 col-12 profile-text">
+          <p class="fullname">Hi there, I am <span>Syed Ammar Ali.</span></p>
+          <p class="occupation1">A FRONT END <span>Developer</span></p>
+          <p>&</p>
+          <p class="occupation2">A UI/UX <span>Designer</span></p>
+          <!-- <button type="button" class="btn btn-outline-primary">Contact</button>
+          <button type="button" class="btn btn-outline-success">WhatsApp</button> -->
+        </div>
+      </div>
+    </div>
+    <div class="container about-me">
+      <div class="col-12 ">
+        <h4>Who Am I ?</h4>
+        <p id="about-id"><span>Hello!</span> I'm a first-year BCA student at the Maulana Azad College, Aurangabad. I completed my 10th grade in 2022 and my 12th grade in 2024, where I developed a deep interest in technology. Currently, I am skilled in frontend development and have a strong foundation in creating interactive and visually appealing websites. Alongside this, I am also learning UI/UX design to enhance the user experience and make websites more intuitive and user-friendly. Soon, I will expand my expertise into backend development, working towards becoming a well-rounded full-stack developer. I am passionate about continuous learning and eager to embrace new challenges that help me grow both academically and professionally.</p>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <div class="skill-edu-head mb-3">
+        <h4>Education & Skills</h4>
+      </div>
+      <div class="row">
+        <div class="col-sm-6  mt-3">
+          <div class="card edu-my">
+            <div class="card-body" >
+              <p class="card-text">I am currently studying in the first year of my Bachelor of Computer Applications (BCA) program at BAMU University.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mt-3" id="edu-id">
+          <div class="card edu-my">
+            <div class="card-body">
+              <p class="card-text">I completed my 10th standard from the SSC Board at Boon English School in Aurangabad, achieving a 62.80% score.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mt-3 ">
+          <div class="card edu-my">
+            <div class="card-body">
+              <p class="card-text">I completed my 12th standard from the HSC Board at Government College Of Arts And Science, Aurangabad, securing a 63% score.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="some-skills m-5">
+        <h6>I have developed several skills alongside my education to enhance my knowledge and abilities.<i class="fa-solid fa-arrow-down"></i></h6>
+      </div>
+      <div class="row mt-4">
+          <!-- Card 1 -->
+          <div class="col-6 col-lg-3 mb-4">
+              <div class="card skill-card">
+                  <img src="html logo.jpeg"  alt="Image">               
+              </div>
+          </div>
+  
+          <!-- Card 2 -->
+          <div class="col-6 col-lg-3 mb-4">
+              <div class="card skill-card">
+                  <img src="css logo 2.jpeg" style="padding-top: 30px;" alt="Image">
+              </div>
+          </div>
+  
+          <!-- Card 3 -->
+          <div class="col-6 col-lg-3 mb-4">
+              <div class="card skill-card">
+                  <img src="JavaScript.jpeg"  alt="Image">
+              </div>
+          </div>
+           <!-- Card 4 -->
+           <div class="col-6 col-lg-3 mb-4">
+            <div class="card skill-card">
+                <img src="Bootstrap 5 Logo.jpeg" style="padding-top: 30px;" alt="Image">
+            </div>
+        </div>
+        <!-- Card 5 -->
+           <div class="col-6 col-lg-3 mb-4">
+            <div class="card skill-card">
+                <img src="Figma Logo _ SVG _ Real Company _ Alphabet, Letter F Logo.jpeg" style="padding-top: 30px;" alt="Image">
+            </div>
+        </div>
+        <!-- Card 6 -->
+           <div class="col-6 col-lg-3 mb-4">
+            <div class="card skill-card">
+                <img src="Icono Adobe XD.jpeg" style="padding-top: 30px;" alt="Image">
+            </div>
+        </div>
+      </div>
+  </div>
+   <!-- Footer -->
+   <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <!-- Footer Column 1 -->
+            <div class="col-md-4">
+                <h5>About Me</h5>
+                <p>I am skilled in frontend development and have a strong foundation in creating interactive and visually appealing websites. </p>
+            </div>
+            
+            <!-- Footer Column 2 -->
+            <div class="col-md-4" id="contact-id">
+                <h5>Contact</h5>
+                <ul class="list-unstyled">
+                    <li><a href="mailto:sdammar.ics@gmail.com" class="text-white"><i class="fa-solid fa-envelope"style="padding-right: 7px;"></i>sdammar.ics@gmail.com</a></li>
+                    <li><a href="tel:+91 8007775088" class="text-white"><i class="fa-solid fa-phone-volume" style="padding-right: 7px;"></i>+91 8007775088</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Column 3 -->
+            <div class="col-md-4">
+                <h5>Follow Me</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white" target="_blank"><i class="fa-brands fa-instagram"style="padding-right: 7px;"></i>instagram</a></li>
+                    <li><a href="#" class="text-white" target="_blank"><i class="fa-brands fa-facebook"style="padding-right: 7px;"></i>facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center mt-3">
+                <p>&copy; 2024  All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
